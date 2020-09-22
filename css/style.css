@@ -1,48 +1,40 @@
 @font-face {
-  font-family: "TitilliumWeb-Black";
+  font-family: "SourceSansPro-Bold";
   font-display: swap;
-  src: url("../fonts/TitilliumWeb-Black.woff") format("woff"), url("../fonts/TitilliumWeb-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "TitilliumWeb-Bold";
-  font-display: swap;
-  src: url("../fonts/TitilliumWeb-Bold.woff") format("woff"), url("../fonts/TitilliumWeb-Bold.woff2") format("woff2");
+  src: url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TitilliumWeb-BoldItalic";
+  font-family: "SourceSansPro-Regular";
   font-display: swap;
-  src: url("../fonts/TitilliumWeb-BoldItalic.woff") format("woff"), url("../fonts/TitilliumWeb-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "TitilliumWeb";
-  font-display: swap;
-  src: url("../fonts/TitilliumWeb-Regular.woff") format("woff"), url("../fonts/TitilliumWeb-Regular.woff2") format("woff2");
+  src: url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TitilliumWeb";
+  font-family: "SourceSansPro-SemiBold";
   font-display: swap;
-  src: url("../fonts/TitilliumWeb-Regular.woff") format("woff"), url("../fonts/TitilliumWeb-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
+  src: url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Light";
+  font-display: swap;
+  src: url("../fonts/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
-  font-family: TitilliumWeb, Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, sans-serif;
   margin: 0px;
   padding: 0px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .header {
@@ -70,7 +62,7 @@ body {
 }
 
 .logotype a {
-  font-family: TitilliumWeb-Bold, Helvetica, sans-serif;
+  font-family: SourceSansPro-Bold, Helvetica, sans-serif;
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
@@ -88,6 +80,7 @@ body {
 }
 
 .top-nav ul {
+  font-family: SourceSansPro-SemiBold, Helvetica, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +107,8 @@ body {
 }
 
 .top-nav ul li a:hover {
-  border-bottom: 5px solid #E0CA3C;
+  font-size: 1.1rem;
+  font-family: SourceSansPro-Bold, Helvetica, sans-serif;
 }
 
 .telephone {
@@ -124,8 +118,8 @@ body {
 .telephone a {
   display: inline;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-family: TitilliumWeb-Bold;
+  font-size: 1.3rem;
+  font-family: SourceSansPro-Bold, Helvetica, sans-serif;
   color: #E0CA3C;
   letter-spacing: 1px;
   padding: 5px 5px;
@@ -138,9 +132,42 @@ body {
   width: 12px;
   height: 12px;
   padding-right: 7px;
-  color: #000F08;
 }
 
 .telephone a:hover {
-  border: 4px solid #E0CA3C;
+  font-size: 1.4rem;
+  border-bottom: 4px solid #E0CA3C;
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    padding: 10px 0px;
+  }
+
+  .logotype a {
+    font-size: 0.9rem;
+    background-color: #E0CA3C;
+    color: #000F08;
+  }
+
+  .logotype a:hover {
+    font-size: 1rem;
+  }
+
+  .top-nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .telephone a {
+    font-size: 0.9rem;
+  }
+
+  .telephone a:hover {
+    font-size: 1rem;
+  }
+
+  .telephone a img {
+    width: 10px;
+    height: 10px;
+  }
 }
